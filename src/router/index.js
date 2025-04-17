@@ -33,7 +33,7 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    const isAuthenticated = store.getters.isAuthenticated;  // Use the store directly
+    const isAuthenticated = store.getters.isAuthenticated;  
 
     if (to.name === 'login' && isAuthenticated) {
         next('/dashboard');
