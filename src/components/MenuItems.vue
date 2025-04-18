@@ -49,7 +49,8 @@ export default {
       this.$router.push(route);
     },
     goToProfile() {
-      this.$router.push("/profile");
+      // this.$router.push("/profile");
+      alert('WIP')
     },
     logout() {
       this.$store.commit("logout");

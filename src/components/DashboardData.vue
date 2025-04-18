@@ -159,7 +159,7 @@ export default {
         "Order Received",
         "Preparing",
         "Ready to Serve",
-        "Completed Orders",
+        "Completed Order",
       ],
     };
   },

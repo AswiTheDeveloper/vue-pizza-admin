@@ -75,7 +75,7 @@
               <!-- Completed Orders -->
               <v-col cols="auto">
                 <v-card
-                  :color="getStatusColor('Completed Orders')"
+                  :color="getStatusColor('Completed Order')"
                   dark
                   class="pa-4 stat-card"
                 >
@@ -83,7 +83,7 @@
                     >Completed Orders</v-card-title
                   >
                   <v-card-subtitle class="text-center text-h4">
-                    {{ countByStatus("Completed Orders") }}
+                    {{ countByStatus("Completed Order") }}
                   </v-card-subtitle>
                 </v-card>
               </v-col>

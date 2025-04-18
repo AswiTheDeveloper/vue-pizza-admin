@@ -5,7 +5,7 @@ export const orderStatusColorMixin = {
                 "Order Received": "#FBC02D",
                 "Preparing": "#FB8C00",
                 "Ready to Serve": "#43A047",
-                "Completed Orders": "#1E88E5",
+                "Completed Order": "#1E88E5",
             };
             return statusColors[status] || "#9E9E9E";
         }
