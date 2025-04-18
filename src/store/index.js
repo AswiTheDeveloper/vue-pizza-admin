@@ -22,12 +22,6 @@ export default new Vuex.Store({
         setOrders(state, orders) {
             state.orders = orders;
         },
-        updateOrderStatus(state, { orderId, newStatus }) {
-            const order = state.orders.find(order => order.orderId === orderId);
-            if (order) {
-                order.orderStatus = newStatus;
-            }
-        },
     },
     actions: {
         login({ commit }, { username, password }) {
@@ -45,9 +39,6 @@ export default new Vuex.Store({
             } catch (error) {
                 console.error("Error fetching orders:", error);
             }
-        },
-        updateOrderStatus({ commit }, { orderId, newStatus }) {
-            commit('updateOrderStatus', { orderId, newStatus });
         },
     },
     getters: {
